@@ -34,3 +34,4 @@ D:\Microservices\SampleMicrosservices\Play.Catalog\src\Play.Catalog.Service\obj\
 D:\Microservices\SampleMicrosservices\Play.Catalog\src\Play.Catalog.Service\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\Microservices\SampleMicrosservices\Play.Catalog\src\Play.Catalog.Service\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\Microservices\SampleMicrosservices\Play.Catalog\src\Play.Catalog.Service\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Microservices\SampleMicrosservices\Play.Catalog\src\Play.Catalog.Service\obj\Debug\net9.0\Play.Catalog.Service.sourcelink.json
