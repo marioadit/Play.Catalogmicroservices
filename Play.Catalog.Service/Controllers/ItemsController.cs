@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Play.Catalog.Service.Dtos;
 
 namespace Play.Catalog.Service.Controllers
 {
@@ -9,29 +11,29 @@ namespace Play.Catalog.Service.Controllers
     [Route("api/[controller]")]
     public class ItemsController : ControllerBase
     {
-        private static readonly List<Item> items = new()
+        private static readonly List<ItemDto> items = new()
         {
-            new Item(Guid.NewGuid(), "Potion", "Restores a small amount of HP", 5, DateTimeOffset.UtcNow),
-            new Item(Guid.NewGuid(), "Antidote", "Cures poison", 7, DateTimeOffset.UtcNow),
-            new Item(Guid.NewGuid(), "Bronze sword", "Deals a small amount of damage", 20, DateTimeOffset.UtcNow)
+            new ItemDto(Guid.NewGuid(), "Potion", "Restores a small amount of HP", 5, DateTimeOffset.UtcNow),
+            new ItemDto(Guid.NewGuid(), "Antidote", "Cures poison", 7, DateTimeOffset.UtcNow),
+            new ItemDto(Guid.NewGuid(), "Bronze sword", "Deals a small amount of damage", 20, DateTimeOffset.UtcNow)
         };
 
         [HttpGet]
         public IEnumerable<ItemDto> Get()
         {
-            return items.Select(item => item.AsDto());
+            return items;
         }
 
         [HttpGet("{id}")]
         public ActionResult<ItemDto> GetById(Guid id)
         {
-            var item = items.FirstOrDefault(item => item.Id == id).SingleOrDefault();
+            var item = items.Where(item => item.Id == id).SingleOrDefault();
             if (item == null)
             {
                 return NotFound();
             }
 
-            return item.AsDto();
+            return Ok(item);
         }
         
     }
