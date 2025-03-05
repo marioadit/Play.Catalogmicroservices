@@ -35,3 +35,9 @@ D:\Microservices\SampleMicrosservices\Play.Catalog\src\Play.Catalog.Service\bin\
 D:\Microservices\SampleMicrosservices\Play.Catalog\src\Play.Catalog.Service\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\Microservices\SampleMicrosservices\Play.Catalog\src\Play.Catalog.Service\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 D:\Microservices\SampleMicrosservices\Play.Catalog\src\Play.Catalog.Service\obj\Debug\net9.0\Play.Catalog.Service.sourcelink.json
+D:\Microservices\SampleMicrosservices\Play.Catalog\src\Play.Catalog.Service\bin\Debug\net9.0\DnsClient.dll
+D:\Microservices\SampleMicrosservices\Play.Catalog\src\Play.Catalog.Service\bin\Debug\net9.0\MongoDB.Bson.dll
+D:\Microservices\SampleMicrosservices\Play.Catalog\src\Play.Catalog.Service\bin\Debug\net9.0\MongoDB.Driver.dll
+D:\Microservices\SampleMicrosservices\Play.Catalog\src\Play.Catalog.Service\bin\Debug\net9.0\SharpCompress.dll
+D:\Microservices\SampleMicrosservices\Play.Catalog\src\Play.Catalog.Service\bin\Debug\net9.0\Snappier.dll
+D:\Microservices\SampleMicrosservices\Play.Catalog\src\Play.Catalog.Service\bin\Debug\net9.0\ZstdSharp.dll
