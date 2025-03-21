@@ -3,6 +3,8 @@ using MongoDB.Driver;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization;
 using MongoDB.Bson.Serialization.Serializers;
+using Play.Catalog.Service.Settings;
+using Play.Catalog.Service.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,6 +21,8 @@ builder.Services.AddOpenApi();
 
 // Add swagger
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddMongo().AddMongoRepository<Item>("items");
 
 var app = builder.Build();
 

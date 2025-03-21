@@ -13,7 +13,12 @@ namespace Play.Catalog.Service.Controllers
     [Route("api/[controller]")]
     public class ItemsController : ControllerBase
     {
-        private static readonly ItemRepository itemRepository = new();
+
+        private readonly IRepository<Item> itemRepository;
+        public ItemsController(IRepository<Item> itemRepository)
+        {
+            this.itemRepository = itemRepository;
+        }
 
         /*private static readonly List<ItemDto> items = new()
         {
@@ -83,7 +88,7 @@ namespace Play.Catalog.Service.Controllers
                 return NotFound();
             }
 
-            await itemRepository.RemoveAsync(id);
+            await itemRepository.DeleteAsync(id);
             return NoContent();
         }
     }
